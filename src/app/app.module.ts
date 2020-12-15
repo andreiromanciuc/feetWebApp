@@ -4,11 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { PartnerPageComponent } from './partner-page/partner-page.component';
+import { CustomerPageComponent } from './customer-page/customer-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoginPageComponent,
+    PartnerPageComponent,
+    CustomerPageComponent
   ],
   imports: [
     BrowserModule,
