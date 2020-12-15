@@ -1,3 +1,6 @@
+import { UserPageComponent } from './user-page/user-page.component';
+import { ContractPageComponent } from './contract-page/contract-page.component';
+import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,6 +10,34 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PartnerPageComponent } from './partner-page/partner-page.component';
 import { CustomerPageComponent } from './customer-page/customer-page.component';
+import { FleetPageComponent } from './fleet-page/fleet-page.component';
+
+const appRoutes :Routes = [
+  {
+    path: '',
+    component: FleetPageComponent
+  },
+  {
+    path: 'partner',
+    component: PartnerPageComponent
+  },
+  {
+    path: 'customer',
+    component: CustomerPageComponent
+  },  
+  {
+    path: 'contract',
+    component: ContractPageComponent
+  },
+  {
+    path: 'user',
+    component :UserPageComponent
+  },
+  {
+    path: 'fleet',
+    component: FleetPageComponent
+  },
+]
 
 @NgModule({
   declarations: [
@@ -18,7 +49,8 @@ import { CustomerPageComponent } from './customer-page/customer-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
