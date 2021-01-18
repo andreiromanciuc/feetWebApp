@@ -1,1 +1,21 @@
-<p>fleet-page works!</p>
+<p>FLEET-page works!</p>
+
+<button id="btn-create-user" type="button" class="btn btn-warning" ng-click="onClickForm()" ng-show="!showForm">Create new USER</button>
+<form ng-show="showForm">
+    <div class="form-group">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="phoneNumber" placeholder="Phone number">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="role" placeholder="User's role ('USER', 'PARTNER', 'CUSTOMER')">
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

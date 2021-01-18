@@ -11,6 +11,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { PartnerPageComponent } from './partner-page/partner-page.component';
 import { CustomerPageComponent } from './customer-page/customer-page.component';
 import { FleetPageComponent } from './fleet-page/fleet-page.component';
+import { FormsModule } from "@angular/forms";
 
 const appRoutes :Routes = [
   {
@@ -50,7 +51,8 @@ const appRoutes :Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
